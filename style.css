@@ -3,3 +3,25 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
 }
+
+body {font-size: 16px}
+
+  button {
+  color:white;
+  display: block;
+  font: 300 150% langdon;
+  background: transparent;
+  border: 3px solid black;
+  cursor: pointer;
+} 
+
+button:hover {
+  background: #f7f7f7;
+  border: 1px solid #8b8b8b;
+}
+
+button:active {
+  background: #2e2e2e;
+  border: 1px solid black;
+  color: white;
+  }

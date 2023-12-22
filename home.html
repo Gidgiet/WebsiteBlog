@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            margin-top: 65px;
+        }
+
+        button {
+            padding: 15px 120px;
+            font-size: 90px;
+            background-color: #e2a8be;
+            color: #1d1d1d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
+
+    <div class="button-container">
+        <button id="myButton1"><a href="about.html" style="text-decoration: none; color: #1b1b1b;">About</a></button>
+    </div>
     
+    <div class="button-container">
+        <button id="myButton2"><a href="articles.html" style="text-decoration: none; color: #1b1b1b;">Articles</a></button>
+    </div>
+
+    <div class="button-container">
+        <button id="myButton3"><a href="contact.html" style="text-decoration: none; color: #1b1b1b;">Contact</a></button>
+    </div>
+
 </body>
 </html>
