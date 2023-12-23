@@ -1,0 +1,81 @@
+body{
+    background-image:url(RankingBackground.jpg) ;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+
+:root {
+    --nav-ctrl-color: #000;
+    --nav-ctrl-size: 1.25rem;
+    --nav-ctrl-inner-size: 1rem;
+}
+
+.banner-content {
+    display: flex;
+    position: relative;
+    height: 50vh; 
+    overflow: hidden;
+    margin-top: 7rem; 
+}
+
+.banner-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    flex: 1;
+}
+
+.banner-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-dot {
+    align-items: center;
+    border-color: var(--nav-ctrl-color);
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 1px;
+    height: var(--nav-ctrl-size);
+    display: flex;
+    justify-content: center;
+    margin: 0 .23rem;
+    width: var(--nav-ctrl-size);
+}
+
+.nav-dot-inner {
+    background-color: var(--nav-ctrl-color);
+    display: block;
+    border-radius: 100%;
+    height: 0;
+    opacity: 0;
+    transition: all .2s ease;
+    width: 0;
+}
+
+.nav-dot:hover .nav-dot-inner {
+    height: var(--nav-ctrl-inner-size);
+    opacity: .5;
+    width: var(--nav-ctrl-inner-size);
+}
+
+#bnr-1-ctrl:checked ~ .banner-nav #bnr-1-dot .nav-dot-inner,
+#bnr-2-ctrl:checked ~ .banner-nav #bnr-2-dot .nav-dot-inner,
+#bnr-3-ctrl:checked ~ .banner-nav #bnr-3-dot .nav-dot-inner {
+    height: var(--nav-ctrl-inner-size);
+    opacity: 1;
+    width: var(--nav-ctrl-inner-size);
+}
+
+#bnr-1-ctrl:checked ~ .banner-content #banner-1,
+#bnr-2-ctrl:checked ~ .banner-content #banner-2,
+#bnr-3-ctrl:checked ~ .banner-content #banner-3 {
+    display: block;
+}
