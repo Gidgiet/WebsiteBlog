@@ -31,6 +31,53 @@
             right: 1850px;
             padding: 0;
         }
+
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+/*Problem with Slideshow positioning*/
+        #slideshow1 {
+            margin-top: 275px;
+            margin-left: 120px;
+            padding: 0;
+        }
+
+        #slideshow2 {
+            margin-top: 90px;
+        }
+
+        #slideshow3 {
+            margin-top: 20px;
+        }
+
+        .slide {
+            display: none;
+            width: 100%; 
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -39,7 +86,8 @@
         <button id="back-button"></button>
     </a>
 
-    <div class="slideshow-container">
+    <div class="slideshow-container" id="slideshow1">
+        
         <div class="slide fade">
             <img src="LittleNightmaresIII.jpg" alt="Image 1">
         </div>
@@ -52,27 +100,96 @@
             <img src="BlackMythWukong.jpg" alt="Image 3">
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1, 'slideshow1')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow1')">&#10095;</a>
     </div>
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
+    <div class="slideshow-container" id="slideshow2">
+       
+        <div class="slide fade">
+            <img src="Apex.jpg" alt="Image A1">
+        </div>
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
+        <div class="slide fade">
+            <img src="Valorant.jpg" alt="Image A2">
+        </div>
+
+        <div class="slide fade">
+            <img src="Fortnite.jpg" alt="Image A3">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'slideshow2')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow2')">&#10095;</a>
+    </div>
+
+    <div class="slideshow-container" id="slideshow3">
+       
+        <div class="slide fade">
+            <img src="LeagueOfLegends.jpg" alt="Image C1">
+        </div>
+
+        <div class="slide fade">
+            <img src="Overwatch2.jpg" alt="Image C2">
+        </div>
+
+        <div class="slide fade">
+            <img src="RocketLeague.jpg" alt="Image C3">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'slideshow3')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow3')">&#10095;</a>
+    </div>
+
+    <!--Youtube videos and tutorial used to help-->
+    <script>
+        var slideIndex1 = 0;
+        var slideIndex2 = 0;
+        var slideIndex3 = 0;
+
+        showSlides(1, 'slideshow1'); 
+        showSlides(2, 'slideshow2'); 
+        showSlides(3, 'slideshow3'); 
+
+        function plusSlides(n, slideshowId) {
+            if (slideshowId === 'slideshow1') {
+                showSlides(slideIndex1 += n, 'slideshow1');
+            } else if (slideshowId === 'slideshow2') {
+                showSlides(slideIndex2 += n, 'slideshow2');
+            } else if (slideshowId === 'slideshow3') {
+                showSlides(slideIndex3 += n, 'slideshow3');
+            }
         }
 
-        function showSlides() {
+        function showSlides(n, slideshowId) {
             var i;
-            var slides = document.getElementsByClassName("slide");
-            if (slideIndex >= slides.length) { slideIndex = 0 }
-            if (slideIndex < 0) { slideIndex = slides.length - 1 }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+            var slides = document.getElementById(slideshowId).getElementsByClassName("slide");
+
+            if (slideshowId === 'slideshow1') {
+                if (slideIndex1 >= slides.length) { slideIndex1 = 0 }
+                if (slideIndex1 < 0) { slideIndex1 = slides.length - 1 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex1].style.display = "block";
+            } else if (slideshowId === 'slideshow2') {
+                if (slideIndex2 >= slides.length) { slideIndex2 = 0 }
+                if (slideIndex2 < 0) { slideIndex2 = slides.length - 1 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex2].style.display = "block";
+            } else if (slideshowId === 'slideshow3') {
+                if (slideIndex3 >= slides.length) { slideIndex3 = 0 }
+                if (slideIndex3 < 0) { slideIndex3 = slides.length - 1 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex3].style.display = "block";
             }
-            slides[slideIndex].style.display = "block";
+
+            setTimeout(function () {
+                showSlides(n, slideshowId);
+            }, 2000); 
         }
     </script>
 </body>
