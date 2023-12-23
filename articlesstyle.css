@@ -1,5 +1,51 @@
-body{
-    background-image:url(ArticlesBackground.jpg) ;
+body {
+    background-image: url('ArticlesBackground.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    margin: 0;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    margin-left: 120px;
+    margin-bottom: 370px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide:checked + img {
+    display: block;
+    transition: none; /* Disable transition effect */
+}
+
+.slideshow-container a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
