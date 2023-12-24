@@ -11,18 +11,19 @@ body {font-size: 16px}
   display: block;
   font: 300 150% langdon;
   background: transparent;
-  border: 3px solid black;
+  border: 3px solid rgb(255, 255, 255);
   cursor: pointer;
+  
 } 
 
 button:hover {
-  background: #f7f7f7;
-  border: 1px solid #8b8b8b;
+  background: #612f4b;
+  
 }
 
 button:active {
-  background: #2e2e2e;
-  border: 1px solid black;
+  background: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
   color: white;
   }
 
@@ -42,8 +43,8 @@ button:active {
 button {
     padding: 15px 120px;
     font-size: 90px;
-    background-color: #e2a8be;
-    color: #1d1d1d;
+    background-color: #ffffff;
+    color: #1f1e1e;
     border: none;
     border-radius: 5px;
     cursor: pointer;

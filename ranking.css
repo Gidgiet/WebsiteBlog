@@ -4,10 +4,23 @@ body{
     background-size: auto;
 }
 
+#back-button {
+    background: url('Arrow Left.png') no-repeat;
+    background-size: cover; 
+    width: 130px; 
+    height: 130px; 
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 810px;
+    right: 1850px;
+    padding: 0;
+}
+
 
 
 :root {
-    --nav-ctrl-color: #000;
+    --nav-ctrl-color: #5c2042;
     --nav-ctrl-size: 1.25rem;
     --nav-ctrl-inner-size: 1rem;
 }
@@ -17,7 +30,8 @@ body{
     position: relative;
     height: 50vh; 
     overflow: hidden;
-    margin-top: 7rem; 
+    margin-top: 20rem; 
+    margin-left: -70rem;
 }
 
 .banner-item {
@@ -30,7 +44,8 @@ body{
 .banner-nav {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-left: -72rem;
 }
 
 .hidden {
@@ -48,6 +63,7 @@ body{
     justify-content: center;
     margin: 0 .23rem;
     width: var(--nav-ctrl-size);
+    
 }
 
 .nav-dot-inner {

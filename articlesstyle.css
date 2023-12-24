@@ -52,21 +52,6 @@ body{
     right: 10px;
 }
 
-
-
-#back-button {
-    background: url('Arrow Left.png') no-repeat;
-    background-size: cover; 
-    width: 130px; 
-    height: 130px; 
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    bottom: 810px;
-    right: 1850px;
-    padding: 0;
-}
-
 .slideshow-container {
     max-width: 800px;
     position: relative;
@@ -84,13 +69,13 @@ body{
 #slideshow2 {
     position: absolute;
     top: 265px;
-    left: 960px;
+    left: 990px;
 }
 
 #slideshow3 {
     position: absolute;
     top: 265px;
-    left: 1800px;
+    left: 1850px;
 }
 
 .slide {
