@@ -52,3 +52,112 @@ body{
     right: 10px;
 }
 
+
+
+#back-button {
+    background: url('Arrow Left.png') no-repeat;
+    background-size: cover; 
+    width: 130px; 
+    height: 130px; 
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 810px;
+    right: 1850px;
+    padding: 0;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+#slideshow1 {
+    position: absolute;
+    top: 265px;
+    left: 120px;
+    
+}
+
+#slideshow2 {
+    position: absolute;
+    top: 265px;
+    left: 960px;
+}
+
+#slideshow3 {
+    position: absolute;
+    top: 265px;
+    left: 1800px;
+}
+
+.slide {
+    display: none;
+    width: 100%; 
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slideshow-button1{
+    font-size: 20px;
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+
+.slideshow-button2{
+    font-size: 20px;
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+.slideshow-button3{
+    font-size: 20px;
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 230px;
+
+}
+
+
+
+
+
