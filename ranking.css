@@ -95,3 +95,48 @@ body{
 #bnr-3-ctrl:checked ~ .banner-content #banner-3 {
     display: block;
 }
+
+.WPC{
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px 10px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 500px;
+    right: 300px;
+}
+
+.RI{
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px 10px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 330px;
+    right: 403px;
+}
+
+.TAH{
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px 10px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 170px;
+    right: 430px;
+}
