@@ -25,3 +25,29 @@ button:active {
   border: 1px solid black;
   color: white;
   }
+
+  body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.button-container {
+    margin-top: 65px;
+}
+
+button {
+    padding: 15px 120px;
+    font-size: 90px;
+    background-color: #e2a8be;
+    color: #1d1d1d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
