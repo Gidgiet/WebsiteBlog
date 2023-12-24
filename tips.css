@@ -1,0 +1,70 @@
+body{
+    background-image:url(TipsBackground.jpg) ;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#back-button {
+    background: url('Arrow Left.png') no-repeat;
+    background-size: cover; 
+    width: 130px; 
+    height: 130px; 
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 810px;
+    right: 1850px;
+    padding: 0;
+}
+
+#TFTButton {
+    background: url('TFTButton.jpg') no-repeat;
+    background-size: cover; 
+    width: 530px; 
+    height: 290px; 
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 430px;
+    right: 1925px;
+    padding: 0;
+}
+
+#TKKNButton {
+    background: url('TKKNButton.jpg') no-repeat;
+    background-size: cover; 
+    width: 530px; 
+    height: 290px; 
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 430px;
+    right: 1300px;
+    padding: 0;
+}
+
+#CODButton {
+    background: url('CODButton.jpg') no-repeat;
+    background-size: cover; 
+    width: 530px; 
+    height: 290px; 
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 53px;
+    right: 1300px;
+    padding: 0;
+}
+
+#IDVButton {
+    background: url('IDVButton.jpg') no-repeat;
+    background-size: cover; 
+    width: 530px; 
+    height: 290px; 
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 53px;
+    right: 1925px;
+    padding: 0;
+}
