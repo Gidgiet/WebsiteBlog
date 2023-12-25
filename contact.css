@@ -4,6 +4,18 @@ body{
     background-size: auto;
 }
 
+#back-button {
+    background: url('Arrow Left.png') no-repeat;
+    background-size: cover; 
+    width: 130px; 
+    height: 130px; 
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 810px;
+    right: 1850px;
+    padding: 0;
+}
  
  .TwitterLogo {
     display: inline-block;
