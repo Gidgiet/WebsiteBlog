@@ -36,3 +36,17 @@ body{
 .InstagramLogo:hover img {
     transform: scale(1.1); 
 }
+
+
+
+.contact-message {
+    font-size: 70px;
+    text-align: center;
+    margin-top: -550px;
+}
+
+.email-link{
+    color: violet;
+    text-decoration: none;
+}
+
