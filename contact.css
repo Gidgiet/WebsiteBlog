@@ -1,0 +1,38 @@
+body{
+    background-image:url(ContactBackground.jpg) ;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+ 
+ .TwitterLogo {
+    display: inline-block;
+    margin: 650px 50px 0 800px;
+}
+
+.TwitterLogo img {
+    width: 300px; 
+    height: auto; 
+    top: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.TwitterLogo:hover img {
+    transform: scale(1.1); 
+}
+
+.InstagramLogo {
+    display: inline-block;
+    margin: 650px 50px 0 300px;
+}
+
+.InstagramLogo img {
+    width: 300px; 
+    height: auto; 
+    top: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.InstagramLogo:hover img {
+    transform: scale(1.1); 
+}
